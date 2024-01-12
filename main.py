@@ -65,7 +65,7 @@ async def get_bodyparts():
 #### SPECIFIC LISTS ####
 
 # returns list of exercies by muscle group
-@router.get('/api/exercies/{group_id}')
+@router.get('/api/exercises/{group_id}')
 async def get_group(group_id: int):
   try:
     data = await get_muscles()
